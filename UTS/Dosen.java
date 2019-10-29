@@ -28,7 +28,7 @@ public class Dosen extends Pegawai{
     public void info() {
         super.info();
         System.out.println("Pegawai             : Dosen");
-        System.out.println("Jumlah Kehadiran    : "+jumlahSks);
+        System.out.println("Jumlah SKS          : "+jumlahSks);
         System.out.println("Gaji                : "+getGaji());
     }
     

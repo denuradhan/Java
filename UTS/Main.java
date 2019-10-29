@@ -9,9 +9,9 @@ package UTS;
  *
  * @author Denuradhan
  */
-import java.util.Scanner;
+
 public class Main {
-    static Scanner sc = new Scanner(System.in);
+    
     static DaftarGaji dg = new DaftarGaji();
     public static void main(String[] args) {
         
@@ -20,6 +20,7 @@ public class Main {
         addDosen("65660", "Cita", "perum abc", 6);
         dg.printSemuaGaji();
         System.out.println();
+        
         for (int i = 0; i < dg.listPegawai.size(); i++) {
             dg.listPegawai.get(i).info();
         }
@@ -30,4 +31,5 @@ public class Main {
     public static void addStaf(String nip, String nama, String alamat, int jmlKehadiran) {
         dg.addPegawai(new Staf(nip, nama, alamat, jmlKehadiran));
     }
+    
 }
