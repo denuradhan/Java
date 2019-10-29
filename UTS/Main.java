@@ -24,6 +24,7 @@ public class Main {
         for (int i = 0; i < dg.listPegawai.size(); i++) {
             dg.listPegawai.get(i).info();
         }
+        
     }
     public static void addDosen(String nip, String nama, String alamat, int jmlSks) {
         dg.addPegawai(new Dosen(nip, nama, alamat, jmlSks));
