@@ -23,7 +23,7 @@ public class Manajer extends Pegawai{
 
     @Override
     public int getGaji() {
-        return gaji+tunjangan;
+        return gaji;
     }
     
     @Override
@@ -31,7 +31,6 @@ public class Manajer extends Pegawai{
         super.info();
         System.out.println("Status          : Manajer");
         System.out.println("Tunjangan       : "+getTunjangan());
-        System.out.println("Gaji Tunjangan  : "+getGaji());
     }
     
 }

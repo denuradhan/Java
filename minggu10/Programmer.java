@@ -24,7 +24,7 @@ public class Programmer extends Pegawai {
 
     @Override
     public int getGaji() {
-        return gaji+bonus;
+        return gaji;
     }
     
     @Override
@@ -32,7 +32,6 @@ public class Programmer extends Pegawai {
         super.info();
         System.out.println("Status          : Programmer");
         System.out.println("Bonus           : "+getBonus());
-        System.out.println("Gaji bonus      : "+getGaji());
     }
     
 }

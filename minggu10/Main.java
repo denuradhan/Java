@@ -16,10 +16,11 @@ public class Main {
         addManajer("Denny", 10000, 5000);
         addProgeammer("Dharma", 5000, 7500);
         addManajer("Alpan", 2000, 3000);
-        
+        Bayaran hr = new Bayaran();
         System.out.println("======================================");
         for (Pegawai pg : pegawai) {
             pg.info();
+            System.out.println("Total Bayaran   : "+hr.hitungBayaran(pg));
         System.out.println("======================================");
         }
     }

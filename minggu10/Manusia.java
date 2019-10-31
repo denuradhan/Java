@@ -12,11 +12,11 @@ package minggu10;
 public class Manusia {
     public void nyalakanPerangkat(Elektronik elc) {
         if (elc instanceof TelevisiJadul) {
-            System.out.println("Televisi Jadul Menyala dengan burik");
+            System.out.println(((TelevisiJadul) elc).getModeInput());
+            System.out.println("Voltase : "+elc.getVoltase());
         }else if(elc instanceof TelevisiModern){
-            System.out.println("Televisi Modern Menyala dengan full hologram");
-        }else{
-            System.out.println("error");
+            System.out.println(((TelevisiModern) elc).getModeInput());
+            System.out.println("Voltase : "+elc.getVoltase());
         }
     }
     
