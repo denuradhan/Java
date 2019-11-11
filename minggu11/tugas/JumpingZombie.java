@@ -36,10 +36,12 @@ public class JumpingZombie extends Zombie{
         }
     }
     
+    @Override
     public void destroyed(){
         this.health -= this.health * 10 / 100;
     }
     
+    @Override
     public String getZombieInfo(){
         return " -> Jumping Zombie's Info : " + super.getZombieInfo();
     }
